@@ -11,5 +11,6 @@ public class A02Length {
 		
 		String str2 = str1.substring(len-1, len);
 		System.out.println(str2);
+	
 	}
 }
