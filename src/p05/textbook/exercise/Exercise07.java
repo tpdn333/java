@@ -1,8 +1,5 @@
 package p05.textbook.exercise;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Exercise07 {
 	public static void main(String[] args) {
 		int max = Integer.MIN_VALUE;
