@@ -1,4 +1,4 @@
-package p99.codingbat;
+package p99.codingbat.Warmup_1;
 
 public class Warmup_1_front3 {
 	public String front3(String str) {

@@ -1,4 +1,4 @@
-package p99.codingbat;
+package p99.codingbat.Warmup_1;
 
 public class Warmup_1_makes10 {
 	public boolean makes10(int a, int b) {

@@ -1,4 +1,4 @@
-package p99.codingbat;
+package p99.codingbat.Warmup_1;
 
 public class Warmup_1_nearHundred {
 	public boolean nearHundred(int n) {

@@ -1,4 +1,4 @@
-package p99.codingbat;
+package p99.codingbat.Warmup_1;
 
 public class Warmup_1_posNeg {
 	public boolean posNeg(int a, int b, boolean negative) {
