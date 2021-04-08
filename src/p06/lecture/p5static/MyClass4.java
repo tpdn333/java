@@ -9,6 +9,11 @@ public class MyClass4 {
 
 	static {
 		b = 50;
+		System.out.println("static block1");
+	}
+
+	static {
+		System.out.println("static block2");
 	}
 
 	MyClass4() {
