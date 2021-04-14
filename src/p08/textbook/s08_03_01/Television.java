@@ -7,7 +7,7 @@ public class Television implements RemoteControl {
 	private int volume;
 
 	@Override
-	public void trunOn() {
+	public void turnOn() {
 		System.out.println("TV를 켭니다");
 	}
 
