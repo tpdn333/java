@@ -1,4 +1,4 @@
-package p08.textbook.exercise.ex05;
+package p08.textbook.exercise.ex04;
 
 public class OracleDao implements DataAccessObject{
 	@Override
