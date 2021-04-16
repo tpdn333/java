@@ -1,6 +1,7 @@
 package p09.lecture;
 
 public class A04LocalClassAccess {
+	int i = 3;
 	void method(int param) {
 		int localVar = 3;
 //		localVar = 4;	// 값이 변하면 안됨
@@ -9,6 +10,7 @@ public class A04LocalClassAccess {
 			void method1() {
 				System.out.println(localVar);
 				System.out.println(param);
+//				System.out.println(this.i);
 			}
 		}
 	}
