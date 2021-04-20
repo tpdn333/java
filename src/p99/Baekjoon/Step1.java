@@ -1,8 +1,8 @@
-package p99.Baekjoon.Step1;
+package p99.Baekjoon;
 
 import java.util.Scanner;
 
-public class Main {
+public class Step1 {
 	public static void s2557(String[] args) {
 		// Hellow World!
 		System.out.println("Hello World!");
