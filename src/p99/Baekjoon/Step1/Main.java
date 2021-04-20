@@ -41,25 +41,25 @@ public class Main {
 		int B = s1.nextInt();
 		System.out.println(A + B);
 	}
-	
+
 	public static void s1001(String[] args) {
 		// A - B
 		Scanner s1 = new Scanner(System.in);
 		System.out.println(s1.nextInt() - s1.nextInt());
 	}
-	
+
 	public static void s10998(String[] args) {
 		// A X B
 		Scanner s1 = new Scanner(System.in);
 		System.out.println(s1.nextInt() * s1.nextInt());
 	}
-	
+
 	public static void s1008(String[] args) {
 		// A / B
 		Scanner s1 = new Scanner(System.in);
-		System.out.println( (double) s1.nextInt() / s1.nextInt());
+		System.out.println((double) s1.nextInt() / s1.nextInt());
 	}
-	
+
 	public static void s10869(String[] args) {
 		// 사칙연산
 		Scanner s1 = new Scanner(System.in);
@@ -70,5 +70,27 @@ public class Main {
 		System.out.println(A * B);
 		System.out.println(A / B);
 		System.out.println(A % B);
+	}
+
+	public static void s10430(String[] args) {
+		// 나머지
+		Scanner s1 = new Scanner(System.in);
+		int A = s1.nextInt();
+		int B = s1.nextInt();
+		int C = s1.nextInt();
+		System.out.println((A + B) % C);
+		System.out.println(((A % C) + (B % C)) % C);
+		System.out.println((A * B) % C);
+		System.out.println(((A % C) * (B % C)) % C);
+	}
+
+	public static void s2588(String[] args) {
+		// 곱셈
+		Scanner s1 = new Scanner(System.in);
+		int A = s1.nextInt(), B = s1.nextInt();
+		System.out.println(A * (B % 10));
+		System.out.println(A * ((B / 10) % 10));
+		System.out.println(A * (B / 100));
+		System.out.println(A * B);
 	}
 }
