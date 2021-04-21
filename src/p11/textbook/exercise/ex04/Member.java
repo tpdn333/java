@@ -8,11 +8,10 @@ public class Member {
 		this.id = id;
 		this.name = name;
 	}
-	
+
 	@Override
 	public String toString() {
-		return id + ": " + name;
+		return "Member [id=" + id + ", name=" + name + "]";
 	}
-	
 	
 }
