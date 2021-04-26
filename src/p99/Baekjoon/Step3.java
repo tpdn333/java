@@ -94,8 +94,8 @@ public class Step3 {
 			System.out.println(i);
 		}
 	}
-	
-	public static void main(String[] args) {
+
+	public static void s11021(String[] args) {
 		// A+B -7
 		Scanner s = new Scanner(System.in);
 		int T = s.nextInt();
@@ -106,7 +106,47 @@ public class Step3 {
 			B[i] = s.nextInt();
 		}
 		for (int i = 0; i < T; i++) {
-			System.out.println("Case #" + (i + 1) + ": " + (A[i] + B[i]));
+			System.out.println("Case #" + (i + 1) + ": " + A[i] + " + " + B[i] + " = " + (A[i] + B[i]));
+		}
+	}
+
+	public static void s11022(String[] args) {
+		// A+B -7
+		Scanner s = new Scanner(System.in);
+		int T = s.nextInt();
+		int[] A = new int[T];
+		int[] B = new int[T];
+		for (int i = 0; i < T; i++) {
+			A[i] = s.nextInt();
+			B[i] = s.nextInt();
+		}
+		for (int i = 0; i < T; i++) {
+			System.out.println("Case #" + (i + 1) + ": " + A[i] + " + " + B[i] + " = " + (A[i] + B[i]));
+		}
+	}
+
+	public static void s2438(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int N = s.nextInt();
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < N; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int N = s.nextInt();
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < N - i - 1; j++) {
+				System.out.print("");
+			}
+			for (int k = 0; k <= i; k++) {
+				System.out.print("*");
+			}
+			System.out.println();
 		}
 	}
 
