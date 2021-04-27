@@ -9,5 +9,11 @@ public class UtilExample {
 		Pair<Integer, String> pair2 = new Pair<>(99, "java");
 		String str = Util.getValue(pair2, 99);
 		System.out.println(str);
+		
+		ChildPair<String, Integer> childPair = new ChildPair<>("홍삼원", 20);
+		Integer childAge = Util.getValue(childPair, "홍삼순");
+		System.out.println(childAge);
+		
+		
 	}
 }
