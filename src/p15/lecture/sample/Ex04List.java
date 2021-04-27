@@ -11,11 +11,22 @@ public class Ex04List {
 		list.add(new Student("jsp", 70));
 		list.add(new Student("html", 90));
 		list.add(new Student("css", 170));
-		System.out.println(list.get(2));
+//		System.out.println(list.get(2));
 
 		Student max = maxScore(list);
 		System.out.println(max.getName() + " : " + max.getScore());
 
+		int sum = sumScore(list);
+		System.out.println("총합: " + sum);
+
+	}
+
+	private static int sumScore(List<Student> list) {
+		int result = 0;
+		for (Student stu : list) {
+			result += stu.getScore();
+		}
+		return result;
 	}
 
 	private static Student maxScore(List<Student> list) {
