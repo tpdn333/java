@@ -1,24 +1,28 @@
 package p99.leetcode;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class p1773 {
 	public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
-		int i = 0;
+		int k = 0;
+		int result = 0;
 		switch (ruleKey) {
 		case "type":
-			i = 0;
+			k = 0;
 		case "color":
-			i = 1;
+			k = 1;
 		case "name":
-			i = 2;
+			k = 2;
 		}
-
-		for (List<String> subItem : items) {
-			if (subItem.get(1) == ruleKey) {
-
+		for (int i = 0; i < items.size(); i++) {
+			List<String> item = items.get(i);
+			if (item.get(k) == ruleValue) {
+				result = i;
 			}
 		}
-		return 0;
+
+		return result;
 	}
+
 }
