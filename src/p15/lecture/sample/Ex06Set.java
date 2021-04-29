@@ -24,10 +24,13 @@ public class Ex06Set {
 		for (int i = 0; i < nums.length; i++) {
 			set.add(nums[i]);
 		}
-		Iterator<Integer> iter = set.iterator();
-		while (iter.hasNext()) {
-			result += iter.next();
+		for (int n : set) {
+			result += n;
 		}
+//		Iterator<Integer> iter = set.iterator();
+//		while (iter.hasNext()) {
+//			result += iter.next();
+//		}
 		return result;
 	}
 }
