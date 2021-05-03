@@ -18,7 +18,7 @@ public class A02InputStream {
 			System.out.println(b);
 
 		}
-		System.out.println("총 " + cnt + "byte");
+		System.out.println(cnt);
 		is.close();
 	}
 }
