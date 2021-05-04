@@ -13,6 +13,7 @@ public class Step3 {
 		for (int i = 1; i <= 9; i++) {
 			System.out.println(N + " * " + i + " = " + N * i);
 		}
+		s.close();
 	}
 
 //	interface Main {
@@ -35,6 +36,7 @@ public class Step3 {
 		for (int i = 0; i < T; i++) {
 			System.out.println(A[i] + B[i]);
 		}
+		s.close();
 	}
 
 	public static void s8393(String[] args) {
@@ -45,6 +47,7 @@ public class Step3 {
 			result += i;
 		}
 		System.out.println(result);
+		s.close();
 	}
 
 	public static void s8393Speed(String[] args) throws IOException {
@@ -56,6 +59,7 @@ public class Step3 {
 			result += i;
 		}
 		System.out.println(result);
+		br.close();
 
 	}
 
@@ -63,7 +67,6 @@ public class Step3 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int T = Integer.parseInt(br.readLine());
-		int[] arr = new int[T];
 
 		StringTokenizer st;
 		for (int i = 0; i < T; i++) {
@@ -80,19 +83,21 @@ public class Step3 {
 	}
 
 	public static void s2741(String[] args) {
-		Scanner s1 = new Scanner(System.in);
-		int N = s1.nextInt();
+		Scanner s = new Scanner(System.in);
+		int N = s.nextInt();
 		for (int i = 1; i <= N; i++) {
 			System.out.println(i);
 		}
+		s.close();
 	}
 
 	public static void s2742(String[] args) {
-		Scanner s1 = new Scanner(System.in);
-		int N = s1.nextInt();
+		Scanner s = new Scanner(System.in);
+		int N = s.nextInt();
 		for (int i = N; i > 0; i--) {
 			System.out.println(i);
 		}
+		s.close();
 	}
 
 	public static void s11021(String[] args) {
@@ -108,6 +113,7 @@ public class Step3 {
 		for (int i = 0; i < T; i++) {
 			System.out.println("Case #" + (i + 1) + ": " + A[i] + " + " + B[i] + " = " + (A[i] + B[i]));
 		}
+		s.close();
 	}
 
 	public static void s11022(String[] args) {
@@ -123,6 +129,7 @@ public class Step3 {
 		for (int i = 0; i < T; i++) {
 			System.out.println("Case #" + (i + 1) + ": " + A[i] + " + " + B[i] + " = " + (A[i] + B[i]));
 		}
+		s.close();
 	}
 
 	public static void s2438(String[] args) {
@@ -134,6 +141,7 @@ public class Step3 {
 			}
 			System.out.println();
 		}
+		s.close();
 	}
 
 	public static void main(String[] args) {
@@ -148,6 +156,7 @@ public class Step3 {
 			}
 			System.out.println();
 		}
+		s.close();
 	}
 
 }
