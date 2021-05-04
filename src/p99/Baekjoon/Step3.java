@@ -50,7 +50,7 @@ public class Step3 {
 		s.close();
 	}
 
-	public static void s8393Speed(String[] args) throws IOException {
+	public static void s8393speed(String[] args) throws IOException {
 		// 합
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());
