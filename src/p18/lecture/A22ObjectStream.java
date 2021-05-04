@@ -11,7 +11,7 @@ public class A22ObjectStream {
 		String path = "src/p18/lecture/output22.txt";
 		FileOutputStream fos = new FileOutputStream(path);
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
-
+		
 		oos.writeObject(new String("java"));
 		oos.writeObject(new String[] { "ccs", "html" });
 
