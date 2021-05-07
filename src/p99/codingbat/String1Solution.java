@@ -107,7 +107,55 @@ public class String1Solution {
 
 	}
 
+	public static String middleThree(String str) {
+		int middle = str.length() / 2;
+		String result = str.substring(middle - 1, middle + 2);
+		return result;
+	}
+
+	public static boolean hasBad(String str) {
+		if (str.length() < 3) {
+			return false;
+		} else if (str.substring(0, 3).equals("bad")) {
+			return true;
+		} else if (str.length() > 3) {
+			if (str.substring(1, 4).equals("bad")) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public static String atFirst(String str) {
+		String result = "";
+		if (str.length() >= 2) {
+			result = str.substring(0, 2);
+		} else if (str.length() == 1) {
+			result = str + "@";
+		} else {
+			result = "@@";
+		}
+		return result;
+	}
+
+	public static String lastChars(String a, String b) {
+		if (a.length() == 0) {
+			a = "@";
+		}
+		if (b.length() == 0) {
+			b = "@";
+		}
+		return a.substring(0, 1) + b.substring(b.length() - 1);
+	}
+
+	public static String lastTwo(String str) {
+		String res ="";
+	
+		return res;
+	}
+
 	public static void main(String[] args) {
+		
 //		String str1 = makeOutWord("<<>>", "Yay");
 //		System.out.println(str1);
 //
@@ -144,14 +192,29 @@ public class String1Solution {
 //		String str12 = middleTwo("string");
 //		System.out.println(str12);
 //		
-		Boolean str13 = endsLy("oddy");
-		System.out.println(str13);
+//		Boolean str13 = endsLy("oddy");
+//		System.out.println(str13);
+//
+//		String str14 = nTwice("Hello", 2);
+//		System.out.println(str14);
+//
+//		String str15 = twoChar("java", 3);
+//		System.out.println(str15);
+//
+//		String str16 = middleThree("solving");
+//		System.out.println(str16);
 
-		String str14 = nTwice("Hello", 2);
-		System.out.println(str14);
+		Boolean str17 = hasBad("xba");
+		System.out.println(str17);
 
-		String str15 = twoChar("java", 3);
-		System.out.println(str15);
+		String str18 = atFirst("");
+		System.out.println(str18);
+
+		String str19 = lastChars("hi", "");
+		System.out.println(str19);
+
+		String str20 = lastTwo("coding");
+		System.out.println(str20);
 	}
 
 }
