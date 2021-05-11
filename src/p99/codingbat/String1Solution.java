@@ -149,13 +149,44 @@ public class String1Solution {
 	}
 
 	public static String lastTwo(String str) {
-		String res ="";
-	
-		return res;
+		int l = str.length();
+		String res = "";
+		if (str.length() >= 2) {
+			res = str.substring(0, l - 2) + str.substring(l - 1) + str.substring(l - 2, l - 1);
+			return res;
+		}
+		return str;
+	}
+
+	public static String seeColor(String str) {
+//		if(str.indexOf("red") == 0) {
+//			return "red";
+//		} else if(str.indexOf("blue") == 0) {
+//			return "blue";
+//		} else 
+//			return "";
+		if (str.startsWith("red")) {
+			return "red";
+		} else if (str.startsWith("blue")) {
+			return "blue";
+		} else {
+			return "";
+		}
+	}
+
+	public static boolean frontAgain(String str) {
+		int l = str.length();
+		if(str.length() > 1 ) {
+			if (str.substring(l - 2).equals(str.substring(0, 2))) {
+				return true;
+			} else
+				return false;
+		} else 
+			return false;
 	}
 
 	public static void main(String[] args) {
-		
+
 //		String str1 = makeOutWord("<<>>", "Yay");
 //		System.out.println(str1);
 //
@@ -204,17 +235,23 @@ public class String1Solution {
 //		String str16 = middleThree("solving");
 //		System.out.println(str16);
 
-		Boolean str17 = hasBad("xba");
-		System.out.println(str17);
+//		Boolean str17 = hasBad("xba");
+//		System.out.println(str17);
+//
+//		String str18 = atFirst("");
+//		System.out.println(str18);
+//
+//		String str19 = lastChars("hi", "");
+//		System.out.println(str19);
+//
+//		String str20 = lastTwo("coding");
+//		System.out.println(str20);
+//		
+//		String str21 = seeColor("xxred");
+//		System.out.println(str21);
 
-		String str18 = atFirst("");
-		System.out.println(str18);
-
-		String str19 = lastChars("hi", "");
-		System.out.println(str19);
-
-		String str20 = lastTwo("coding");
-		System.out.println(str20);
+		Boolean str22 = frontAgain("edit");
+		System.out.println(str22);
 	}
 
 }
