@@ -176,16 +176,72 @@ public class String1Solution {
 
 	public static boolean frontAgain(String str) {
 		int l = str.length();
-		if(str.length() > 1 ) {
+		if (str.length() > 1) {
 			if (str.substring(l - 2).equals(str.substring(0, 2))) {
 				return true;
 			} else
 				return false;
-		} else 
+		} else
 			return false;
 	}
 
+	public static String minCat(String a, String b) {
+		int l = 0;
+		if (a.length() < b.length()) {
+			l = a.length();
+		} else {
+			l = b.length();
+		}
+		String res = "";
+		res = a.substring(a.length() - l) + b.substring(b.length() - l);
+		return res;
+	}
+
+	public static String extraFront(String str) {
+		String res = "";
+		if (str.length() <= 2) {
+			return str + str + str;
+		} else {
+			String copies = str.substring(0, 2);
+			return copies + copies + copies;
+		}
+	}
+
+	public static String without2(String str) {
+		int l = str.length();
+		if (str.length() < 2) {
+			return str;
+		} else if (str.substring(l - 2).equals(str.substring(0, 2))) {
+			return str.substring(2);
+		} else {
+			return str;
+		}
+
+	}
+
+	public static String deFront(String str) {
+		String back = str.substring(2);
+		if (str.charAt(1) == 'b') {
+			back = "b" + back;
+		} 
+		if (str.charAt(0) == 'a') {
+			back = "a" + back;
+		}
+		return back;
+	}
+
 	public static void main(String[] args) {
+		String str26 = deFront("abc");
+		System.out.println(str26);
+
+//		String str25 = without2("HelloHe");
+//		System.out.println(str25);
+
+//		String str24 = extraFront("ab");
+//		System.out.println(str24);
+
+//		String str23 = minCat("Hello", "java");
+//		System.out.println(str23);
 
 //		String str1 = makeOutWord("<<>>", "Yay");
 //		System.out.println(str1);
@@ -249,9 +305,9 @@ public class String1Solution {
 //		
 //		String str21 = seeColor("xxred");
 //		System.out.println(str21);
-
-		Boolean str22 = frontAgain("edit");
-		System.out.println(str22);
+//
+//		Boolean str22 = frontAgain("edit");
+//		System.out.println(str22);
 	}
 
 }
