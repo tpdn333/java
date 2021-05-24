@@ -3,11 +3,11 @@ package p99.codingbat.Warmup_2;
 public class stringMatch {
 	public static int stringMatch(String a, String b) {
 		int result = 0;
-		for (int i = 0; i < a.length() - 1; i++) {
-			for (int j = 0; j < b.length() - 1; j++) {
-				if (a.substring(i, i + 2).equals(b.substring(j, j + 2))) {
-					result++;
-				}
+		int len = Math.min(a.length(), b.length());
+		for (int i = 0; i < len - 
+				1; i++) {
+			if(a.substring(i, i+2).equals(b.substring(i, i+2))) {
+				result++;
 			}
 		}
 		return result;
